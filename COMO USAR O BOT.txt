@@ -1,0 +1,38 @@
+1) Instale o python
+MARQUE A CAIXINHA QUE FALA SOBRE O PATH!
+https://www.python.org/downloads/
+
+
+2) Abra um cmd e digite o comando:
+pip install selenium
+
+
+3) Se não tem o Google Chrome, instale.
+Abra-o, vá para chrome://version
+Atente-se à primeira linha, o primeiro numerozinho, provavelmente vai ser 90 (se for, não precisa continuar esse passo, o .exe da pasta funciona)
+Vá nesse site https://chromedriver.chromium.org/downloads
+Baixe a versão correspondente ao seu Google Chrome e descompacte-a para a pasta que tem o main.py
+
+
+4) Abra o bot.py com o bloco de notas e na primeira linha (linkPechincha = 'https://a.aliexpress.com/_mNrlVyl') substitua o link
+MANTENHA AS ' NO COMEÇO E FIM.
+NÃO MUDE O ESPAÇAMENTO ANTES DA LINHA
+
+
+5) Salve o arquivo (aperta ctrl+s)
+Copie o caminho da pasta onde está o script
+Vá no cmd e digite: cd Cole_O_Caminho_Aqui
+Exemplo: cd C:\Users\katomaro\Desktop\SLASHIT
+Digite: main.py
+Se der comando desconhecido tente: python main.py
+ou então: python3 main.py
+
+
+6) O programa permite o uso de proxies para falsificar o IP utilizado (recomendado para evitar bloqueios em itens médio),
+ou caso você esteja fazendo com vários produtos pelo mesmo IP. Para usar, crie um arquivo "proxylist.txt" na mesma pasta
+e cole todos os proxies no formato IP:PORTA, apenas UM por linha. Se o seu proxy precisa de login, use a síntaxe HTTP.
+
+
+7) O programa permite rotacionar qual dispositivo o site vê que tá acessando, para isso crie um arquivo "devicelist.txt"
+na mesma pasta do programa e deixe o nome de cada dispositivo em uma linha. Use esse link como base:
+https://www.browserstack.com/list-of-browsers-and-platforms/automate

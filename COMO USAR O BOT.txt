@@ -23,9 +23,9 @@ NÃO MUDE O ESPAÇAMENTO ANTES DA LINHA
 Copie o caminho da pasta onde está o script
 Vá no cmd e digite: cd Cole_O_Caminho_Aqui
 Exemplo: cd C:\Users\katomaro\Desktop\SLASHIT
-Digite: main.py
-Se der comando desconhecido tente: python main.py
-ou então: python3 main.py
+Digite: bot.py
+Se der comando desconhecido tente: python bot.py
+ou então: python3 bot.py
 
 
 6) O programa permite o uso de proxies para falsificar o IP utilizado (recomendado para evitar bloqueios em itens médio),

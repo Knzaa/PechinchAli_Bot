@@ -42,7 +42,7 @@ while True:
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--disable-dev-shm-usage")
         driver = webdriver.Chrome(options=chrome_options)
-        driver.implicitly_wait(15)
+        driver.implicitly_wait(45)
         N = 13
         randemail = (
             "".join(random.choices(string.ascii_uppercase + string.digits, k=N))

@@ -33,16 +33,19 @@ while True:
         else:
             mobileEmulation = {"deviceName": "Nexus 5"}
         chrome_options.add_experimental_option("mobileEmulation", mobileEmulation)
+        service_args = []
         if useProxy:
             selectedProxy = random.choice(proxyList)
+            service_args = ["--proxy=http://%s" % selectedProxy, '--ignore-ssl-errors=yes']
             chrome_options.add_argument("--proxy-server=http://%s" % selectedProxy)
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--mute-audio")
         chrome_options.add_argument("--log-level=3")
+        chrome_options.add_argument("--ignore-certificate-errors")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        driver = webdriver.Chrome(options=chrome_options)
-        driver.implicitly_wait(45)
+        driver = webdriver.Chrome(options=chrome_options, service_args=service_args)
+        driver.implicitly_wait(120)
         N = 13
         randemail = (
             "".join(random.choices(string.ascii_uppercase + string.digits, k=N))
